@@ -20,7 +20,7 @@ $( document ).ready(function() {
         if (e.which == 13) {
             var todotext = $(this).val();
             $(this).val("");
-            $("ul").append("<li><span>X</span> "+todotext+"</li>");
+            $("ul").append("<li><span><i class='fa fa-trash'></i></span> "+todotext+"</li>");
         }
 
     });
