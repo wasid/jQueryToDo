@@ -1,10 +1,13 @@
 body{
-    background: steelblue;
+    background: #77EEDF;
+    color:#28292B;
 }
 
 #container{
-    background: gray;
+    text-align: center;
+    /*background: gray;*/
     width: 360px;
     margin: 0 auto;
+    border: 2px solid #28292B;
     
 }
