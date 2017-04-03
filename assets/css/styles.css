@@ -50,6 +50,7 @@ span{
 }
 
 input{
+    display: none;
     font-size: 18px;
     color: #2980b9;
     background: #f7f7f7;

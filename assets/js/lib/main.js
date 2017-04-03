@@ -1,4 +1,11 @@
 $( document ).ready(function() {
+    
+    $(".fa-plus").on("click", function(){
+
+        $("input[type='text']").slideToggle();
+  
+    });
+    
     $("ul").on("click", "li", function(){
 
         $(this).toggleClass("complete");
