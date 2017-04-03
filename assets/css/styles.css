@@ -11,3 +11,8 @@ body{
     border: 2px solid #28292B;
     
 }
+
+.complete{
+    color: gray;
+    text-decoration: line-through;
+}

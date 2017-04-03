@@ -1,24 +1,26 @@
 $( document ).ready(function() {
     $("li").on("click", function(){
         
-        // console.log($(this).css("color"));
+        console.log("clicked li");
         
-        if ($(this).css("color") === "rgb(128, 128, 128)") {
+        // if ($(this).css("color") === "rgb(128, 128, 128)") {
             
-            $(this).css({
-            color: "#28292B",  
-            textDecoration: "none"
-        });
+        //     $(this).css({
+        //     color: "#28292B",  
+        //     textDecoration: "none"
+        // });
             
-        } else {
+        // } else {
             
                     
-        $(this).css({
-            color: "gray",  
-            textDecoration: "line-through"
-        });
+        // $(this).css({
+        //     color: "gray",  
+        //     textDecoration: "line-through"
+        // });
             
-        }
+        // }
+        
+        $(this).toggleClass("complete");
   
     });
     
