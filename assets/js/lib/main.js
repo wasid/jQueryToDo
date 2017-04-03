@@ -1,11 +1,11 @@
 $( document ).ready(function() {
-    $("li").on("click", function(){
+    $("ul").on("click", "li", function(){
 
         $(this).toggleClass("complete");
   
     });
     
-    $("span").on("click", function(event){
+    $("ul").on("click", "span", function(event){
 
         // console.log("clicked on span!");
         
@@ -14,6 +14,15 @@ $( document ).ready(function() {
         });
         
         event.stopPropagation();
+    });
+    
+    $("input[type='text']").keypress(function(e){
+        if (e.which == 13) {
+            var todotext = $(this).val();
+            $(this).val("");
+            $("ul").append("<li><span>X</span> "+todotext+"</li>");
+        }
+
     });
     
     
