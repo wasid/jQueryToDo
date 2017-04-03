@@ -1,27 +1,21 @@
 $( document ).ready(function() {
     $("li").on("click", function(){
-        
-        console.log("clicked li");
-        
-        // if ($(this).css("color") === "rgb(128, 128, 128)") {
-            
-        //     $(this).css({
-        //     color: "#28292B",  
-        //     textDecoration: "none"
-        // });
-            
-        // } else {
-            
-                    
-        // $(this).css({
-        //     color: "gray",  
-        //     textDecoration: "line-through"
-        // });
-            
-        // }
-        
+
         $(this).toggleClass("complete");
   
     });
+    
+    $("span").on("click", function(event){
+
+        // console.log("clicked on span!");
+        
+        $(this).parent().fadeOut(500, function(){
+            $(this).remove();
+        });
+        
+        event.stopPropagation();
+    });
+    
+    
     
 });
